@@ -1,0 +1,16 @@
+version: "3"
+services:
+  app:
+    ports:
+      - "5000:5000"
+    volumes:
+      - '.:/opt/fb11-demo'
+    environment:
+      PERL5LIB: /opt/fb11-demo/lib
+      CATALYST_DEBUG: 1
+      DEV_MODE: 1
+
+  db:
+    environment:
+      POSTGRES_USER: fb11
+      POSTGRES_PASSWORD: fb11password

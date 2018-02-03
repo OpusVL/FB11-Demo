@@ -1,0 +1,18 @@
+version: "3"
+services:
+  app:
+    image: fb11-demo:latest
+    links:
+      - db
+      - memcached
+
+  db:
+    image: postgres:10.1
+    volumes:
+      - './pgdata:/var/lib/postgresql/data'
+    environment:
+      POSTGRES_USER: fb11
+      POSTGRES_PASSWORD: fb11password
+
+  memcached:
+    image: memcached

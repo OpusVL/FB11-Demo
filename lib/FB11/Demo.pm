@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use FB11::Demo::Builder;
 
-our $VERSION = '0.010';
+our $VERSION = '0.001';
 
 my $builder = FB11::Demo::Builder->new(
     appname => __PACKAGE__,
