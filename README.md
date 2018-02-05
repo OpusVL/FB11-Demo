@@ -67,9 +67,9 @@ There's magic that sets up the database. It's in OpusVL::FB11, which you
 installed as a dependency, or which you have because you're using docker.
 
     fb11-dbh -c 'dbi:Pg:host=db;dbname=fb11' -u fb11 -p fb11password \
-        OpusVL::FB11::Schema deploy
+        OpusVL::FB11::Schema::FB11AuthDB deploy
     fb11-dbh -c 'dbi:Pg:host=db;dbname=fb11' -u fb11 -p fb11password \
-        OpusVL::FB11::Schema upgrade
+        OpusVL::FB11::Schema::FB11AuthDB upgrade
 
 If you're using docker you can just put `docker-compose exec app` in front of
 each command to run it within the container.
