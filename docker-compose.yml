@@ -5,6 +5,8 @@ services:
     links:
       - db
       - memcached
+    environment:
+      PSGI: /opt/perl5/bin/fb11-demo.psgi
 
   db:
     image: postgres:10.1

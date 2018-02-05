@@ -9,6 +9,7 @@ services:
       PERL5LIB: /opt/fb11-demo/lib
       CATALYST_DEBUG: 1
       DEV_MODE: 1
+      PSGI: /opt/fb11-demo/bin/fb11_demo.psgi
 
   db:
     environment:
