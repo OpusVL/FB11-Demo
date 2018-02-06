@@ -81,6 +81,7 @@ In future we shall make this be done via the application itself.
 ## Docker
 
 The docker setup by default stores your postgres data in the directory `pgdata`.
-You can override this in your override file simply by providing a new value for
-the `volumes` array. We use a volume so that if you have to recreate this
-container, you don't lose all the stuff you've done within the app.
+We use a volume so that if you have to recreate this container, you don't lose
+all the stuff you've done within the app.  You can override this in your
+override file simply by providing a new value for the `volumes` array, like in
+the example overrides file.
