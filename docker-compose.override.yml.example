@@ -15,3 +15,5 @@ services:
     environment:
       POSTGRES_USER: fb11
       POSTGRES_PASSWORD: fb11password
+    volumes:
+      - '/better/path/to/pgdata:/var/lib/postgresql/data'
