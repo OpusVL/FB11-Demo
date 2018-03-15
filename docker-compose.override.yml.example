@@ -1,6 +1,6 @@
 version: "3"
 services:
-  app:
+  fb11-demo:
     ports:
       - "5000:5000"
     volumes:
@@ -11,7 +11,7 @@ services:
       DEV_MODE: 1
       PSGI: /opt/fb11-demo/bin/fb11_demo.psgi
 
-  db:
+  postgres:
     environment:
       POSTGRES_USER: fb11
       POSTGRES_PASSWORD: fb11password
